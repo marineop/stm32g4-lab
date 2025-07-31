@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +56,11 @@ static void MX_LPUART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int __io_putchar(int ch)
+{
+	HAL_UART_Transmit(&hlpuart1, (const uint8_t *)&ch, 1, HAL_MAX_DELAY);
+	return ch;
+}
 /* USER CODE END 0 */
 
 /**
@@ -97,6 +101,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  HAL_Delay(1000);
+	  printf("Hello World!\r\n");
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
