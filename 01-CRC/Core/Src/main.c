@@ -103,10 +103,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint8_t buffer[] = {'1', '2'};
   while (1)
   {
 	  HAL_Delay(1000);
-	  printf("Hello World!\r\n");
+	  uint32_t crc = HAL_CRC_Calculate(&hcrc, buffer, sizeof(buffer));
+	  printf("CRC = %X\r\n", crc);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
