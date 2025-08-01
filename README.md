@@ -2,19 +2,17 @@
 
 This project serves as a simple and practical tutorial for those interested in getting started with STM32 firmware development.
 
-## Development Setup
+## Development Hardware and Software
 
 - **Development Board:**  
   `NUCLEO-G474RE`
+- **USB cable**  
+  Type A (male) to Micro B (male)
 
 - **IDE:**  
   `STM32CubeIDE 1.19.0`
 
-## Development Board  
-**`NUCLEO-G474RE`**
-
 ## IDE  
-**`STM32CubeIDE 1.19.0`**
 
 - You must create a ST account to download the IDE.
 - **Important:** After installation, you need to log in to use the IDE.  

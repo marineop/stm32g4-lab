@@ -33,6 +33,19 @@
     }
     /* USER CODE END 3 */
     ```
+* Use HAL_CRC_Calculate API
+    ``` C
+    uint8_t buffer[] = {'1', '2'};
+    while (1)
+    {
+        HAL_Delay(1000);
+        uint32_t crc = HAL_CRC_Calculate(&hcrc, buffer, sizeof(buffer));
+        printf("CRC = %X\r\n", crc);
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+    }
+    ```
 
 * Check the CRC computed by MCU is correct  
 ![alt text](image-4.png)
