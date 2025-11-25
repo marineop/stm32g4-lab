@@ -1,13 +1,13 @@
 ## Tutorial
 * Per the board's user manual, we can communicate with LPUART1 using a USB VCOM connection (PA2/PA3).
-![alt text](image.png)
+![alt text](doc/image.png)
 
 * According to the reference manual, the maximum baud rate is 9600.  
-![alt text](image-3.png)
+![alt text](doc/image-3.png)
 
 * Configure the .ioc file  
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](doc/image-1.png)
+![alt text](doc/image-2.png)
 
 * Setup printf to use LPUART1  
     ``` C
@@ -48,5 +48,5 @@
     ```
 
 * Check the CRC computed by MCU is correct  
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](doc/image-4.png)
+![alt text](doc/image-5.png)

@@ -2,6 +2,10 @@
 
 This project serves as a simple and practical tutorial for those interested in getting started with STM32 firmware development.
 
+## Projects
+* [CRC](01-CRC/readme.md)
+* [ADXL345](02-ADXL345/readme.md)
+
 ## Development Hardware and Software
 
 - **Development Board:**  

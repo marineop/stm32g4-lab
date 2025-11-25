@@ -4,12 +4,12 @@ A simple example of interfacing with external device - accerometer ADXL345.
 * [Breakout Board](https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html)
 * OS: FreeRTOS
 * Interface: SPI (4-wire)
-![alt text](setup.jpg)
+![alt text](doc/setup.jpg)
 
 ## Implemented Feature  
 * Print out Acceleration data (X, Y, Z)
 * Single Tap event  
-![alt text](print.png)
+![alt text](doc/print.png)
 
 ## Pinout  
 | STM32G474 Pin | Function | Dev Board | ADXL345 Pin|
@@ -24,5 +24,5 @@ N/A | N/A | CN5-7 | GND
 PA2 | LPUART1_TX | N/A | N/A
 PA3 | LPUART1_RX | N/A | N/A
 
-![alt text](pinout-1.png)
-![alt text](pinout-2.png)
+![alt text](doc/pinout-1.png)
+![alt text](doc/pinout-2.png)
